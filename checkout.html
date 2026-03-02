@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Beat Blend And Bake Cart Page</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&amp;family=Paytone+One&amp;family=DM+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#FACC15", // Bright Yellow for buttons/accents
+                        secondary: "#D97706", // Terracotta
+                        accent: "#6EE7B7", // Mint Green
+                        chocolate: "#3E2723", // Deep Brown
+                        "background-light": "#FFFDF9", // Soft Cream as requested
+                        "background-dark": "#1F1512", // Very dark brown for dark mode
+                        "card-light": "#FFFFFF",
+                        "card-dark": "#2D211E",
+                        "mango": "#FFB74D", // Mango Yellow
+                        "soft-pink": "#F8BBD0", // Soft Boutique Pink
+                    },
+                    fontFamily: {
+                        display: ["'Paytone One'", "sans-serif"], // Chunky headings
+                        body: ["'DM Sans'", "sans-serif"], // Readable body text
+                        fun: ["'Fredoka'", "sans-serif"], // Playful accents
+                    },
+                    borderRadius: {
+                        DEFAULT: "1rem",
+                        "2xl": "1.5rem",
+                        "3xl": "2rem",
+                        "4xl": "3rem",
+                    },
+                    boxShadow: {
+                        'retro': '4px 4px 0px 0px rgba(62, 39, 35, 1)', // Hard shadow for retro feel
+                    }
+                },
+            },
+        };
+    </script>
+<style>
+        .sticker-float {
+            animation: float 4s ease-in-out infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-10px) rotate(3deg); }
+            100% { transform: translateY(0px) rotate(0deg); }
+        }
+        .text-outline {
+             -webkit-text-stroke: 1px #3E2723;
+        }
+        .dark .text-outline {
+             -webkit-text-stroke: 1px #FFF8F0;
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-chocolate dark:text-gray-100 font-body transition-colors duration-300 antialiased selection:bg-primary selection:text-chocolate flex flex-col min-h-screen">
+<div class="bg-indigo-600 dark:bg-indigo-900 text-white text-xs font-bold py-2 text-center tracking-wider uppercase">
+<span class="material-symbols-outlined text-sm align-middle mr-1">celebration</span> 
+        Now Taking Orders for Christmas Hampers &amp; Marzipan!
+    </div>
+<nav class="container mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center relative z-50 gap-4 md:gap-0">
+<a class="text-2xl md:text-3xl font-display tracking-tight text-chocolate dark:text-primary text-center md:text-left leading-tight" href="#">
+            BEAT BLEND<br/><span class="text-secondary">AND BAKE.</span>
+</a>
+<div class="hidden lg:flex space-x-6 font-bold text-sm tracking-wide">
+<a class="hover:text-secondary transition-colors" href="#">BESPOKE &amp; SACRAMENTS</a>
+<a class="hover:text-secondary transition-colors" href="#">CUSTOM CAKES</a>
+<a class="hover:text-secondary transition-colors" href="#">DAILY BAKES</a>
+<a class="hover:text-secondary transition-colors" href="#">FESTIVE</a>
+</div>
+<div class="flex items-center space-x-4">
+<button class="bg-primary text-chocolate font-display px-6 py-2 rounded-full shadow-retro hover:translate-y-0.5 hover:shadow-none transition-all border-2 border-chocolate dark:border-transparent uppercase text-sm">
+                Shop More
+            </button>
+<button class="w-10 h-10 flex items-center justify-center rounded-full border-2 border-chocolate dark:border-gray-600 bg-secondary text-white transition-colors relative">
+<span class="material-symbols-outlined">shopping_bag</span>
+<span class="absolute -top-1 -right-1 bg-red-500 text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center">3</span>
+</button>
+</div>
+</nav>
+<main class="container mx-auto px-4 pb-20 flex-grow">
+<div class="py-8 relative">
+<h1 class="text-5xl md:text-7xl font-display text-chocolate dark:text-white uppercase leading-none mb-2">
+                Your Bakery <span class="text-secondary">Tray</span>
+</h1>
+<div class="absolute top-4 right-10 hidden lg:block rotate-12 bg-primary text-chocolate font-fun px-4 py-2 rounded-full text-sm font-bold shadow-lg sticker-float border-2 border-chocolate">
+                Freshly Baked!
+            </div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+<div class="lg:col-span-8 space-y-6">
+<div class="bg-white dark:bg-card-dark rounded-2xl p-6 shadow-md border-2 border-transparent hover:border-primary transition-all flex flex-col sm:flex-row gap-6 relative group">
+<div class="w-full sm:w-40 h-40 flex-shrink-0 bg-gray-100 rounded-xl overflow-hidden relative">
+<img alt="Sea Salt Cookies" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFThjpBJ_QbosY0NCBlYh6t12NgzxH6Ppda0o5QCcLXUkvAlASYboMkh0jnO9Yo9UYy_PfzbkGPtA62-JphUYspiaCXPVCZT3oqCZTp6EBQ5Hcmk6To01fq0s-QCoDMy9BGH0qLn_FFHIcMI6DvUU4I3ULbdIILtl7O9LLfZeYOEKi1L8qXSLTC-VAhEhAx4eGhRRVGVtSxiCo4IZoUMrJUvUL6-3TdEy250wC8x8PhlJX29F2cmr2lPe0DKN3CCquGoa8cs91fZQ"/>
+<div class="absolute top-2 left-2 bg-white/90 backdrop-blur-sm text-chocolate text-[10px] font-bold px-2 py-1 rounded-full uppercase tracking-wider">
+                            Top Pick
+                        </div>
+</div>
+<div class="flex-grow flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start">
+<h3 class="font-display text-2xl text-chocolate dark:text-white uppercase leading-tight">
+                                    Sea Salt Dark Chocolate Cookies
+                                </h3>
+<button class="text-chocolate/40 hover:text-red-500 transition-colors p-1" title="Remove item">
+<span class="material-symbols-outlined">delete</span>
+</button>
+</div>
+<p class="text-gray-500 dark:text-gray-400 text-sm mt-1 font-medium">Box of 8 • Signature Blend</p>
+</div>
+<div class="flex flex-wrap items-end justify-between gap-4 mt-4">
+<div class="flex items-center border-2 border-chocolate dark:border-gray-600 rounded-full px-1 py-1">
+<button class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 text-chocolate dark:text-white transition-colors">
+<span class="material-symbols-outlined text-sm">remove</span>
+</button>
+<span class="w-8 text-center font-bold text-lg">1</span>
+<button class="w-8 h-8 flex items-center justify-center rounded-full bg-primary text-chocolate shadow-sm hover:bg-yellow-300 transition-colors">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+<div class="text-right">
+<span class="block text-2xl font-display text-chocolate dark:text-primary">₹750</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-card-dark rounded-2xl p-6 shadow-md border-2 border-transparent hover:border-primary transition-all flex flex-col sm:flex-row gap-6 relative group">
+<div class="w-full sm:w-40 h-40 flex-shrink-0 bg-gray-100 rounded-xl overflow-hidden">
+<img alt="Belgian Chocolate Cake" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBF95xxEj3myReRxGHFc7SsDY8oILVA4XUxMdsRx86KSFhmrvpiY1UhCq7gGK_vHF9MeGCFSE1plDQ5bZOR6D7ZLwGCOJD3jA93-ENyMmpNNfTCdxA1P8Ra6jaNMnbH8RzRttWzWs7K8c2qUxSUPeMRcG0Gn_faDPcMHCUmflLAjWGxtuuYSBL8moSJAUeUExHpoRB0TsJu9tIMPXXzAEP7Pz4PSvCwUm4q_eVIDXNK4K25u3PZ-3aoCPLu3ZX3DY1f0VWSIBHQNU"/>
+</div>
+<div class="flex-grow flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start">
+<h3 class="font-display text-2xl text-chocolate dark:text-white uppercase leading-tight">
+                                    Classic Belgian Chocolate Cake
+                                </h3>
+<button class="text-chocolate/40 hover:text-red-500 transition-colors p-1" title="Remove item">
+<span class="material-symbols-outlined">delete</span>
+</button>
+</div>
+<p class="text-gray-500 dark:text-gray-400 text-sm mt-1 font-medium">1kg • Eggless Option</p>
+<div class="mt-2 inline-flex gap-2 text-xs font-bold text-chocolate bg-orange-100 px-3 py-1 rounded-full">
+<span class="material-symbols-outlined text-sm">scale</span> 1 KG
+                            </div>
+</div>
+<div class="flex flex-wrap items-end justify-between gap-4 mt-4">
+<div class="flex items-center border-2 border-chocolate dark:border-gray-600 rounded-full px-1 py-1">
+<button class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 text-chocolate dark:text-white transition-colors">
+<span class="material-symbols-outlined text-sm">remove</span>
+</button>
+<span class="w-8 text-center font-bold text-lg">1</span>
+<button class="w-8 h-8 flex items-center justify-center rounded-full bg-primary text-chocolate shadow-sm hover:bg-yellow-300 transition-colors">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+<div class="text-right">
+<span class="block text-2xl font-display text-chocolate dark:text-primary">₹1200</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-card-dark rounded-2xl p-6 shadow-md border-2 border-transparent hover:border-primary transition-all flex flex-col sm:flex-row gap-6 relative group">
+<div class="w-full sm:w-40 h-40 flex-shrink-0 bg-gray-100 rounded-xl overflow-hidden">
+<img alt="Mango Pudding" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCV_ZLPtc7J8NPmK_mlJbvBovI-VTnYZqY6Y7t_9KGcjDVIgsOWdBI8Zno04Y2oBRC2vtFye3V76ttPpkTg4ZgD8NGjV88Y56jhdYKGf7KpIUlyVrOhF0pPF6H99Ss_71LIH1ewbPYVNE4oS0a8Hjbdwib7YRcA5yBNaI1iV4TbD07Gm-mQp43CtRkHgu5E5XCxCeuYOjOoxYBet6o2H83sdW0163_C7Yp3JcbolYOP196UIvzrKeUQonF-nSo0VNjTjgl-hDTETSw"/>
+</div>
+<div class="flex-grow flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start">
+<h3 class="font-display text-2xl text-chocolate dark:text-white uppercase leading-tight">
+                                    Summer Mango Pudding
+                                </h3>
+<button class="text-chocolate/40 hover:text-red-500 transition-colors p-1" title="Remove item">
+<span class="material-symbols-outlined">delete</span>
+</button>
+</div>
+<p class="text-gray-500 dark:text-gray-400 text-sm mt-1 font-medium">Seasonal Special • Contains Gelatin</p>
+</div>
+<div class="flex flex-wrap items-end justify-between gap-4 mt-4">
+<div class="flex items-center border-2 border-chocolate dark:border-gray-600 rounded-full px-1 py-1">
+<button class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 text-chocolate dark:text-white transition-colors">
+<span class="material-symbols-outlined text-sm">remove</span>
+</button>
+<span class="w-8 text-center font-bold text-lg">1</span>
+<button class="w-8 h-8 flex items-center justify-center rounded-full bg-primary text-chocolate shadow-sm hover:bg-yellow-300 transition-colors">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+<div class="text-right">
+<span class="block text-2xl font-display text-chocolate dark:text-primary">₹450</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-4 relative">
+<div class="sticky top-10">
+<div class="bg-mango dark:bg-orange-900 rounded-3xl p-8 shadow-xl text-chocolate dark:text-white relative overflow-hidden border-4 border-white dark:border-card-dark">
+<div class="absolute -top-3 -right-3 bg-white text-chocolate font-fun text-xs font-bold px-3 py-1 rotate-6 rounded-lg shadow-sm">
+                             Sweet Deal!
+                         </div>
+<h2 class="font-display text-3xl uppercase mb-6 border-b-2 border-chocolate/20 dark:border-white/20 pb-4">
+                            Summary
+                        </h2>
+<div class="space-y-4 mb-8 font-medium">
+<div class="flex justify-between items-center">
+<span class="text-chocolate/80 dark:text-white/80">Subtotal</span>
+<span class="font-bold text-lg">₹2400</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-chocolate/80 dark:text-white/80">Delivery (Mumbai Zone 1)</span>
+<span class="font-bold text-lg">₹150</span>
+</div>
+<div class="border-t-2 border-dashed border-chocolate/30 dark:border-white/30 my-4"></div>
+<div class="flex justify-between items-center text-xl font-display">
+<span>Total</span>
+<span>₹2550</span>
+</div>
+</div>
+<div class="mb-6">
+<label class="block font-bold text-sm mb-2 uppercase tracking-wide" for="note">Add a note for the baker</label>
+<textarea class="w-full bg-white/50 dark:bg-black/20 border-2 border-transparent focus:border-chocolate dark:focus:border-white rounded-xl p-3 text-sm placeholder-chocolate/50 dark:placeholder-white/50 resize-none font-medium outline-none transition-all" id="note" placeholder="e.g. Happy Birthday Rahul!" rows="3"></textarea>
+</div>
+<button class="w-full bg-chocolate text-white font-display uppercase tracking-wider py-4 rounded-full shadow-retro hover:shadow-none hover:translate-y-1 transition-all text-lg flex justify-center items-center gap-2 group">
+                            Proceed to Checkout
+                            <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<div class="mt-6 flex justify-center">
+<div class="flex -space-x-2">
+<img alt="User" class="w-8 h-8 rounded-full border-2 border-white dark:border-card-dark" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8_gvWGQQzL6thTBws3xuMcA3fmgezT_9MUefaHdxDcEBv7CS66TzLmYLKsUkm1CzRTvKgi7afy62kBnOUT_oeyHjVx_Z-NT-GlUcQqc473QF2WJnpQ5dMGHtx8hTliJanik4QH9SEJT2iAXYPogZGloF1n5Aw5XQhZP8j7iKN1vk8_LigMmYSTK0OOX_-b9NMuW1Y3D3EfQCvgSAdAGQkg31KRjANt0GBUi9kwcu6_-PwGEToUZ9fSz_aA3FBRF0YSm8Y7x8h4vo"/>
+<img alt="User" class="w-8 h-8 rounded-full border-2 border-white dark:border-card-dark" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-4CekuNtIjp3aj3tkCc1guM67QuAorPsMrJzYmZ7ydTio0m3sTxwOY1JfOXrWxtBtR1IyUDIKtROOV7j6e1ItGE0P8vanOnXVIVbAPug4VKlTD92jaFtPUCJR39SynUZWkgbnMbaLKhYjdYlT0YWDJaxw3ioff9xAxYhZtieYcnWxQTckv2vkrAeUmpcm502T5G4Mtl7_YuShyga8g0rs7Nhw2AgIE56gcN3vR_Nb0UPgO3JSNbFPy0ZWvyZx_3Ezv5ayJCr2YY0"/>
+<img alt="User" class="w-8 h-8 rounded-full border-2 border-white dark:border-card-dark" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAh7fSFuduCohdo7dvk2_3-kIrUSh9EhsGN6do8g3WkthokxgUsTwyIm_4lR17snwsf-ZTRZAtctSBBPERVa7VA0YCHLq7NmurYwAYK02gbBXojxPp9K5A2EVBgWbcKMoOLnHh-CRr65YirNGLTQ722w4R2jMOFB99P53qjM-WF2fdDubW5xDeryTj7jv5tCqsdfIpYS-RpxgxFs_uE9fW4Yx6mznlwOksdwXFr4SpMmnxHF4oQhD9MMUKrz45tJRZgLKOxhWT1wU"/>
+</div>
+<p class="text-xs font-bold ml-2 self-center opacity-80">12 others checked out recently</p>
+</div>
+</div>
+<div class="mt-8 bg-white dark:bg-card-dark rounded-3xl p-8 text-center hidden">
+<div class="w-24 h-24 bg-gray-100 rounded-full mx-auto flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-4xl text-gray-400 rotate-45">roller_skating</span>
+</div>
+<h3 class="font-display text-xl mb-2">Your tray is empty!</h3>
+<p class="text-gray-500 text-sm mb-4">Let's fill it with something sweet.</p>
+<button class="text-secondary font-bold text-sm underline decoration-wavy">Start Browsing</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="bg-teal-100 dark:bg-teal-900 rounded-t-[4rem] px-6 pt-16 pb-8 mx-2 md:mx-4 mb-4 mt-auto">
+<div class="container mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 border-b border-teal-200 dark:border-teal-800 pb-12">
+<div class="space-y-6">
+<h2 class="text-4xl md:text-5xl font-display text-teal-900 dark:text-teal-50 uppercase leading-none">
+                        With Enough <br/> Butter, Anything <br/> Is Good!
+                    </h2>
+<div class="flex items-center space-x-4 bg-white/50 dark:bg-black/20 p-4 rounded-2xl max-w-sm backdrop-blur-sm">
+<img alt="Support agent" class="w-12 h-12 rounded-full border-2 border-teal-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0FXPwVhpw_59O5q0-c_BbCMRHGVY7dPCJVZpC7yHssyw-YXsaLzpYxR8PTOepVsV2k049CL6AplvySp7KUgT_RLnfawmHJ0o7vSN-2CwDcq9CS88ga7Z85lSBH4fBNF9UCyQuZTMxhqf08KplRIpcP0LqoPjtJojJjhpzdg8p5FrTv6_Z1KiQ9Aqv8OHuj6ezw1TPN6YqsatDw-8dn-y_gdgGKME9sRyVdGzl0GHmxESJyeD8IfMRWZ6QrcCRQXRN4ly_8Mtfd-U"/>
+<div>
+<p class="text-sm font-bold text-teal-900 dark:text-teal-100">Freshening up traditions daily.</p>
+<a class="text-xs underline text-teal-700 dark:text-teal-300 font-bold mt-1 block" href="#">Join the Bakers Circle?</a>
+</div>
+</div>
+</div>
+<div class="flex flex-col justify-end">
+<div class="mb-8">
+<div class="flex items-baseline space-x-2">
+<span class="text-5xl font-display text-teal-900 dark:text-white">4.9</span>
+<div class="flex text-white text-sm">
+<span class="material-symbols-outlined text-sm text-yellow-500 fill-current">star</span>
+<span class="material-symbols-outlined text-sm text-yellow-500 fill-current">star</span>
+<span class="material-symbols-outlined text-sm text-yellow-500 fill-current">star</span>
+<span class="material-symbols-outlined text-sm text-yellow-500 fill-current">star</span>
+<span class="material-symbols-outlined text-sm text-yellow-500 fill-current">star</span>
+</div>
+</div>
+<p class="text-teal-800 dark:text-teal-200 text-sm font-medium">Based on local Mumbai reviews.</p>
+</div>
+<div class="flex flex-wrap gap-3">
+<a class="border border-teal-800 dark:border-teal-200 text-teal-900 dark:text-teal-100 px-4 py-2 rounded-full text-xs font-bold uppercase hover:bg-teal-800 hover:text-white transition-colors cursor-pointer" href="#">Bespoke Cakes</a>
+<a class="border border-teal-800 dark:border-teal-200 text-teal-900 dark:text-teal-100 px-4 py-2 rounded-full text-xs font-bold uppercase hover:bg-teal-800 hover:text-white transition-colors cursor-pointer" href="#">Sacraments</a>
+<a class="border border-teal-800 dark:border-teal-200 text-teal-900 dark:text-teal-100 px-4 py-2 rounded-full text-xs font-bold uppercase hover:bg-teal-800 hover:text-white transition-colors cursor-pointer" href="#">Tea Cakes</a>
+<a class="border border-teal-800 dark:border-teal-200 text-teal-900 dark:text-teal-100 px-4 py-2 rounded-full text-xs font-bold uppercase hover:bg-teal-800 hover:text-white transition-colors cursor-pointer" href="#">Cookies</a>
+<a class="border border-teal-800 dark:border-teal-200 text-teal-900 dark:text-teal-100 px-4 py-2 rounded-full text-xs font-bold uppercase hover:bg-teal-800 hover:text-white transition-colors cursor-pointer" href="#">Gift Boxes</a>
+</div>
+</div>
+</div>
+<div class="pt-8 flex flex-col md:flex-row justify-between items-center bg-chocolate dark:bg-black p-6 rounded-3xl mt-8 text-white">
+<p class="text-xs text-gray-400 mb-4 md:mb-0">© 2024 Beat Blend And Bake.</p>
+<a class="text-2xl font-display tracking-tight text-white mb-4 md:mb-0" href="#">
+                    BEAT BLEND<span class="text-secondary">.</span>
+</a>
+<div class="flex items-center space-x-4">
+<span class="text-xs font-bold uppercase mr-2">Follow us-</span>
+<a class="w-8 h-8 border border-gray-600 flex items-center justify-center rounded hover:bg-white hover:text-chocolate transition-colors" href="#"><i class="not-italic font-bold text-xs">ig</i></a>
+<a class="w-8 h-8 border border-gray-600 flex items-center justify-center rounded hover:bg-white hover:text-chocolate transition-colors" href="#"><i class="not-italic font-bold text-xs">fb</i></a>
+<a class="w-8 h-8 border border-gray-600 flex items-center justify-center rounded hover:bg-white hover:text-chocolate transition-colors" href="#"><i class="not-italic font-bold text-xs">wa</i></a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add('dark');
+        }
+    </script>
+
+</body></html>

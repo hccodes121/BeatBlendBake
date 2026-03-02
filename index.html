@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Beat Blend And Bake Home</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&amp;family=Paytone+One&amp;family=DM+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#FACC15", // Bright Yellow for buttons/accents
+                        secondary: "#D97706", // Terracotta
+                        accent: "#6EE7B7", // Mint Green
+                        chocolate: "#3E2723", // Deep Brown
+                        "background-light": "#FFF8F0", // Soft Cream
+                        "background-dark": "#1F1512", // Very dark brown for dark mode
+                        "card-light": "#FFFFFF",
+                        "card-dark": "#2D211E",
+                    },
+                    fontFamily: {
+                        display: ["'Paytone One'", "sans-serif"], // Chunky headings
+                        body: ["'DM Sans'", "sans-serif"], // Readable body text
+                        fun: ["'Fredoka'", "sans-serif"], // Playful accents
+                    },
+                    borderRadius: {
+                        DEFAULT: "1rem",
+                        "3xl": "2rem",
+                        "4xl": "3rem",
+                    },
+                    boxShadow: {
+                        'retro': '4px 4px 0px 0px rgba(62, 39, 35, 1)', // Hard shadow for retro feel
+                    }
+                },
+            },
+        };
+    </script>
+<style>.sticker-float {
+            animation: float 4s ease-in-out infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-10px) rotate(3deg); }
+            100% { transform: translateY(0px) rotate(0deg); }
+        }
+        .text-outline {
+             -webkit-text-stroke: 1px #3E2723;
+        }
+        .dark .text-outline {
+             -webkit-text-stroke: 1px #FFF8F0;
+        }.no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-chocolate dark:text-gray-100 font-body transition-colors duration-300 antialiased selection:bg-primary selection:text-chocolate">
+<div class="bg-indigo-600 dark:bg-indigo-900 text-white text-xs font-bold py-2 text-center tracking-wider uppercase">
+<span class="material-symbols-outlined text-sm align-middle mr-1">celebration</span> 
+        Now Taking Orders for Christmas Hampers &amp; Marzipan!
+    </div>
+<nav class="container mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center relative z-50 gap-4 md:gap-0">
+<a class="text-2xl md:text-3xl font-display tracking-tight text-chocolate dark:text-primary text-center md:text-left leading-tight" href="#">
+            BEAT BLEND<br/><span class="text-secondary">AND BAKE.</span>
+</a>
+<div class="hidden lg:flex space-x-6 font-bold text-sm tracking-wide">
+<a class="hover:text-secondary transition-colors" href="#">BESPOKE &amp; SACRAMENTS</a>
+<a class="hover:text-secondary transition-colors" href="#">CUSTOM CAKES</a>
+<a class="hover:text-secondary transition-colors" href="#">DAILY BAKES</a>
+<a class="hover:text-secondary transition-colors" href="#">FESTIVE</a>
+</div>
+<div class="flex items-center space-x-4">
+<button class="bg-primary text-chocolate font-display px-6 py-2 rounded-full shadow-retro hover:translate-y-0.5 hover:shadow-none transition-all border-2 border-chocolate dark:border-transparent uppercase text-sm">
+                Order Now
+            </button>
+<button class="w-10 h-10 flex items-center justify-center rounded-full border-2 border-chocolate dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors relative">
+<span class="material-symbols-outlined">shopping_bag</span>
+<span class="absolute -top-1 -right-1 bg-red-500 text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center">0</span>
+</button>
+</div>
+</nav>
+<main class="container mx-auto px-4 pb-20 space-y-24">
+<section class="bg-white dark:bg-card-dark rounded-4xl p-8 md:p-12 relative overflow-hidden shadow-xl mt-4">
+<div class="absolute top-10 left-10 text-secondary dark:text-secondary opacity-20 transform -rotate-12 pointer-events-none">
+<span class="material-symbols-outlined text-6xl">bakery_dining</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="space-y-6 z-10 relative">
+<div class="relative inline-block">
+<h1 class="text-6xl md:text-8xl font-display leading-[0.9] text-chocolate dark:text-white uppercase">
+                            Beat <span class="text-secondary">The</span> <br/> Tradition
+                        </h1>
+<div class="absolute -top-6 -right-12 rotate-12 bg-green-500 text-white font-fun px-3 py-1 rounded-full text-sm font-bold shadow-lg sticker-float border-2 border-white dark:border-gray-800">
+                            BESPOKE ONLY
+                        </div>
+</div>
+<div class="relative">
+<h2 class="text-3xl md:text-5xl font-display text-chocolate dark:text-gray-200 uppercase mb-4">
+                            Blend And Bake
+                        </h2>
+<div class="absolute -top-8 right-20 -rotate-6 bg-secondary text-white font-fun px-4 py-1 rounded-full text-sm font-bold shadow-lg sticker-float border-2 border-white dark:border-gray-800" style="animation-delay: 1s;">
+                            HEIRLOOM RECIPES
+                        </div>
+</div>
+<p class="text-lg text-gray-600 dark:text-gray-300 max-w-md font-medium">
+                        Premium bespoke bakery in Mumbai. From traditional sacraments to themed celebrations and seasonal bakes, we craft memories.
+                    </p>
+<div class="flex items-center space-x-6 pt-4">
+<button class="bg-primary text-chocolate font-display text-lg px-8 py-3 rounded-full shadow-retro hover:translate-y-0.5 hover:shadow-none transition-all border-2 border-chocolate dark:border-transparent">
+                            VIEW MENU
+                        </button>
+<a class="font-bold underline decoration-wavy decoration-secondary hover:text-secondary transition-colors flex items-center group" href="#">
+                            BOOK CONSULTATION 
+                            <span class="material-symbols-outlined ml-1 transform group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="relative h-full min-h-[400px] flex items-center justify-center">
+<div class="absolute inset-0 bg-primary rounded-3xl transform rotate-3 scale-95 z-0"></div>
+<div class="relative z-10 w-full h-full flex justify-center items-end">
+<img alt="Elegant 3-tier wedding cake" class="rounded-2xl shadow-2xl object-cover h-[500px] w-auto transform hover:scale-105 transition-transform duration-500 border-4 border-white dark:border-card-dark" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDWc2kr_HEHShFt0pdo1-SvZ9oW5Fg9SI6XYFyqgrihAKxNMz4pRROYil2Ups6t9-UtG8IN40XF6l_WiucmW_QihX-aE_6HkuSPaHmcX8mH4C1qaEiSz5FCtN-Yue-vJY9-_tRDd7872L3D2-DW5T-x4Vb28O_tuRZA0Yj-ZOvs0GozMOQ9WyK8ohtpdNCnXJ47IQDrmfmDLbf7rAVU5M8Pzhb-BD2LiF3zNchLKrxLSuObdaZnmvIatYnjcwTIscjwD3N1a4-fDU"/>
+<img alt="Artisan Cookie" class="absolute -bottom-5 -left-5 w-24 h-24 rounded-full border-4 border-white dark:border-card-dark shadow-xl object-cover animate-bounce bg-white" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFThjpBJ_QbosY0NCBlYh6t12NgzxH6Ppda0o5QCcLXUkvAlASYboMkh0jnO9Yo9UYy_PfzbkGPtA62-JphUYspiaCXPVCZT3oqCZTp6EBQ5Hcmk6To01fq0s-QCoDMy9BGH0qLn_FFHIcMI6DvUU4I3ULbdIILtl7O9LLfZeYOEKi1L8qXSLTC-VAhEhAx4eGhRRVGVtSxiCo4IZoUMrJUvUL6-3TdEy250wC8x8PhlJX29F2cmr2lPe0DKN3CCquGoa8cs91fZQ" style="animation-duration: 3s;"/>
+</div>
+</div>
+</div>
+</section>
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="bg-white dark:bg-card-dark rounded-3xl p-6 shadow-lg border-2 border-transparent hover:border-secondary transition-all group">
+<div class="h-48 rounded-2xl bg-gray-100 overflow-hidden mb-4 relative">
+<img alt="Elegant white communion cake" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFThjpBJ_QbosY0NCBlYh6t12NgzxH6Ppda0o5QCcLXUkvAlASYboMkh0jnO9Yo9UYy_PfzbkGPtA62-JphUYspiaCXPVCZT3oqCZTp6EBQ5Hcmk6To01fq0s-QCoDMy9BGH0qLn_FFHIcMI6DvUU4I3ULbdIILtl7O9LLfZeYOEKi1L8qXSLTC-VAhEhAx4eGhRRVGVtSxiCo4IZoUMrJUvUL6-3TdEy250wC8x8PhlJX29F2cmr2lPe0DKN3CCquGoa8cs91fZQ"/>
+<div class="absolute top-2 right-2 bg-white rounded-full p-1 shadow-sm">
+<span class="material-symbols-outlined text-chocolate text-sm">church</span>
+</div>
+</div>
+<h3 class="font-display text-xl text-chocolate dark:text-white uppercase leading-tight mb-2">Bespoke &amp; Sacraments</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400">Elegant Wedding, Communion, and Baptism cakes crafted with reverence.</p>
+</div>
+<div class="bg-white dark:bg-card-dark rounded-3xl p-6 shadow-lg border-2 border-transparent hover:border-secondary transition-all group">
+<div class="h-48 rounded-2xl bg-gray-100 overflow-hidden mb-4 relative">
+<img alt="Mountain Bike Forest Cake" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAAvvQimtXiolyf0dmf9UL756M9eC2GfKrRfeYtJOFca24qOCUvsDV6inwSlAw_P23bI-QK5bjvrJr2UtASqZICc_Ol0dQH3E_MNBVRKZAdxNBF_FoiUTbszUt6rdw2p1DOYhts7OKr6s-KaI78fhExjOIB46DYpAgXvEGC8f_lGFxhiRD6bwFIfSO-GC1jOte4DS5WUnv9QcSVr1df_QHsjz124abssrDIqfLOS6roM-ltUekwR7cc3kPNx-EEBVe0FAgtgeGGwE"/>
+<div class="absolute top-2 right-2 bg-white rounded-full p-1 shadow-sm">
+<span class="material-symbols-outlined text-chocolate text-sm">celebration</span>
+</div>
+</div>
+<h3 class="font-display text-xl text-chocolate dark:text-white uppercase leading-tight mb-2">Custom Celebrations</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400">Themed birthday extravaganzas and milestone cakes made to order.</p>
+</div>
+<div class="bg-white dark:bg-card-dark rounded-3xl p-6 shadow-lg border-2 border-transparent hover:border-secondary transition-all group">
+<div class="h-48 rounded-2xl bg-gray-100 overflow-hidden mb-4 relative">
+<img alt="Summer Mango Tart" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCV_ZLPtc7J8NPmK_mlJbvBovI-VTnYZqY6Y7t_9KGcjDVIgsOWdBI8Zno04Y2oBRC2vtFye3V76ttPpkTg4ZgD8NGjV88Y56jhdYKGf7KpIUlyVrOhF0pPF6H99Ss_71LIH1ewbPYVNE4oS0a8Hjbdwib7YRcA5yBNaI1iV4TbD07Gm-mQp43CtRkHgu5E5XCxCeuYOjOoxYBet6o2H83sdW0163_C7Yp3JcbolYOP196UIvzrKeUQonF-nSo0VNjTjgl-hDTETSw"/>
+<div class="absolute top-2 right-2 bg-white rounded-full p-1 shadow-sm">
+<span class="material-symbols-outlined text-chocolate text-sm">nutrition</span>
+</div>
+</div>
+<h3 class="font-display text-xl text-chocolate dark:text-white uppercase leading-tight mb-2">Seasonal &amp; Fresh</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400">Summer Mango specials, berry tarts, and vibrant fruit pastries.</p>
+</div>
+<div class="bg-white dark:bg-card-dark rounded-3xl p-6 shadow-lg border-2 border-transparent hover:border-secondary transition-all group">
+<div class="h-48 rounded-2xl bg-gray-100 overflow-hidden mb-4 relative">
+<img alt="Grandma's Tea Cakes" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfaXsqT1XypMiUYpBa6gQz1u59lvNeABUoAcRUyHc2NCHfUSp6_kE7tokJwWgloJd8cB0rmTRGxlGy_lza-4ratIqnc99XoGDGteMJDMA19PPfAGzxKxUbdax3lx6lecnW2sw6PE5sr77FMnGDmGhqJoounE1OH_ceSt_Sfq6P2EPb4z4mYpH46naDbI77rpqHp8w3qAajQK3ROFQ_Ao4zrw8zFHw2DzegQC-ElQ4288MiT0jYf2P76yu5kRiZRBDa4mt6hP4iLxs"/>
+<div class="absolute top-2 right-2 bg-white rounded-full p-1 shadow-sm">
+<span class="material-symbols-outlined text-chocolate text-sm">bakery_dining</span>
+</div>
+</div>
+<h3 class="font-display text-xl text-chocolate dark:text-white uppercase leading-tight mb-2">Everyday Pastries</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400">Grandma's old-school cakes and tea cupcakes for your daily fix.</p>
+</div>
+</section>
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+<div class="lg:col-span-5 relative bg-green-100 dark:bg-green-900 rounded-3xl p-8 flex flex-col justify-between overflow-hidden min-h-[400px]">
+<div class="z-10 relative">
+<span class="bg-white text-green-800 px-3 py-1 rounded-full text-xs font-bold uppercase mb-4 inline-block">WhatsApp Us</span>
+<h2 class="text-4xl font-display text-green-900 dark:text-green-50 uppercase leading-none mb-4">
+            Bespoke<br/>Consultations
+        </h2>
+<p class="text-green-800 dark:text-green-100 mb-6 font-medium">Planning a wedding or big event? Chat directly with our head baker to design your dream cake.</p>
+<button class="flex items-center gap-2 bg-green-600 text-white font-bold px-6 py-3 rounded-full hover:bg-green-700 transition-colors shadow-lg">
+<span class="material-symbols-outlined text-sm">chat</span>
+            Chat on WhatsApp
+        </button>
+</div>
+<img alt="Consultation sketch" class="absolute bottom-0 right-0 w-2/3 opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUOmE7rHd9GrIGSK0ggzbc-MxgO5T6QeVt0PGRV8c-I27qWRXdSm5SliqdoyJOWhMzdLM6qooYvC4hz_S-iNbpWnw7fc_GNsTq6Kn5gxiF33j3DkU1hXDNZsJjTv1VAgt0Ve3WVjDb9-HyFO4lRWUGsmeujzF6p9lCo_ze-xB1T59kIpydzxjPf6QeZg8pr768epdMl8b_vZkTUj7Muac6kEfCqmM5-d3qtw-AEk33KIPbxOWIS_WL31t0v-xtM4WJAR5wJ2adf5I"/>
+</div>
+<div class="lg:col-span-7 flex flex-col justify-center bg-orange-50 dark:bg-orange-900/30 rounded-3xl p-8 md:pl-12 relative overflow-hidden">
+<div class="absolute -right-10 -top-10 text-orange-200 dark:text-orange-900 transform rotate-12">
+<span class="material-symbols-outlined text-[200px]">card_giftcard</span>
+</div>
+<div class="relative z-10">
+<span class="text-secondary dark:text-primary font-fun font-bold text-xl mb-2 block">For Offices &amp; Events -</span>
+<h2 class="text-5xl md:text-6xl font-display text-chocolate dark:text-white uppercase leading-none mb-6">
+            Corporate <br/> Gifting
+        </h2>
+<p class="mt-4 text-gray-600 dark:text-gray-300 font-medium max-w-lg leading-relaxed text-lg">
+            Make an impression with our curated boxes of artisanal cookies, tea cakes, and savory treats. Perfect for client gifts or office celebrations.
+        </p>
+<div class="mt-8 flex gap-4">
+<button class="bg-chocolate text-white px-6 py-3 rounded-full font-display uppercase text-sm hover:bg-opacity-90 transition-colors">Download Brochure</button>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-red-50 dark:bg-red-950/30 rounded-[3rem] p-8 md:p-16 relative overflow-hidden border-2 border-red-100 dark:border-red-900">
+<div class="absolute top-0 right-0 p-8 opacity-10">
+<span class="material-symbols-outlined text-9xl text-red-800">holiday_village</span>
+</div>
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6 relative z-10">
+<div>
+<span class="text-red-600 dark:text-red-400 font-fun font-bold text-lg mb-2 block uppercase tracking-wider">Heritage Specials</span>
+<h2 class="text-5xl font-display text-chocolate dark:text-white uppercase max-w-md leading-tight">
+                Festive &amp; Seasonal
+            </h2>
+</div>
+<a class="text-red-600 dark:text-red-400 font-bold underline decoration-wavy hover:text-red-800 transition-colors" href="#">View All Seasonal Items</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
+<div class="group cursor-pointer">
+<div class="bg-white dark:bg-card-dark rounded-[2.5rem] p-6 h-80 flex items-center justify-center relative overflow-hidden transition-all duration-300 hover:shadow-xl border border-red-100 dark:border-red-900">
+<span class="absolute top-4 left-4 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">LIMITED</span>
+<img alt="Christmas Marzipan" class="w-48 h-48 object-contain drop-shadow-xl transform group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAxZXXHWEHrKHx1CN3tOaQQF6Es5jkArRQDaWdsfV5OtENV4GwNszbUBgSYczSerFN5Ihx7QcpmoE23q8D_k8JTfStx1-PsAWJO-XJP51YN7wHrdkGVSub3eIBISCZrlPPO9PMd0e3CqQ9NBfM6Zv8RRjPnI3yw-XAGCXKI8FCVrwU0ZG-1w4WcaA0Xzz5l3_C1wzzYv1lwnODGo1dmg2C-e8R7GGjbWvRj9-cUoRp1G0rX2qhjrAzA1OikZAF18goJFHLHt2tZM8"/>
+</div>
+<h3 class="text-center mt-6 font-display text-2xl text-chocolate dark:text-white uppercase">Traditional Marzipan</h3>
+<p class="text-center text-sm text-gray-500">Hand-molded fruits &amp; shapes</p>
+</div>
+<div class="group cursor-pointer mt-8 md:mt-0">
+<div class="bg-white dark:bg-card-dark rounded-[2.5rem] p-6 h-80 flex items-center justify-center relative overflow-hidden transition-all duration-300 hover:shadow-xl border border-red-100 dark:border-red-900">
+<span class="absolute top-4 left-4 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">GIFTING</span>
+<img alt="Christmas Hamper" class="w-full h-full object-cover rounded-2xl transform group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB47Pf6fsgP9F6RA97uZaGQXN2Fn_0UYG0sFrK-nVBOJ700ogVKdgwY0nrKdF4N_DYj9i_BS4FyT42Jdr3yU2WdwE9E2qdCRfISaxYua1ExMNJJ60bR66pnLJ6BLRYuvXoHmLLb3d1YHteElrLgtrmndrnzSBR11MfaMI8Q_08JSQlNo4jTq-o-3C7eFilDTjfziTRuepViSwhaZIDSNZokE_D_WlyC04ILzcGI9lVujWh9Izh_ZFG11UBGppoa4G56Z8WDy3FCs-M"/>
+</div>
+<h3 class="text-center mt-6 font-display text-2xl text-chocolate dark:text-white uppercase">Festive Hampers</h3>
+<p class="text-center text-sm text-gray-500">Curated sweet &amp; savory mix</p>
+</div>
+<div class="group cursor-pointer">
+<div class="bg-white dark:bg-card-dark rounded-[2.5rem] p-6 h-80 flex items-center justify-center relative overflow-hidden transition-all duration-300 hover:shadow-xl border border-red-100 dark:border-red-900">
+<img alt="Plum Cake" class="w-48 h-48 object-contain drop-shadow-xl transform group-hover:rotate-3 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBF95xxEj3myReRxGHFc7SsDY8oILVA4XUxMdsRx86KSFhmrvpiY1UhCq7gGK_vHF9MeGCFSE1plDQ5bZOR6D7ZLwGCOJD3jA93-ENyMmpNNfTCdxA1P8Ra6jaNMnbH8RzRttWzWs7K8c2qUxSUPeMRcG0Gn_faDPcMHCUmflLAjWGxtuuYSBL8moSJAUeUExHpoRB0TsJu9tIMPXXzAEP7Pz4PSvCwUm4q_eVIDXNK4K25u3PZ-3aoCPLu3ZX3DY1f0VWSIBHQNU"/>
+</div>
+<h3 class="text-center mt-6 font-display text-2xl text-chocolate dark:text-white uppercase">Rich Plum Cake</h3>
+<p class="text-center text-sm text-gray-500">Soaked in rum &amp; spices</p>
+</div>
+</div>
+</section>
+<section class="bg-chocolate dark:bg-black text-white rounded-[3rem] p-8 md:p-16 relative overflow-hidden">
+<div class="absolute right-0 bottom-0 opacity-10 pointer-events-none">
+<svg height="400" viewBox="0 0 200 200" width="400">
+<path d="M10,190 Q50,100 100,190 T190,190" fill="none" stroke="white" stroke-width="2"></path>
+<path d="M10,170 Q50,80 100,170 T190,170" fill="none" stroke="white" stroke-width="2"></path>
+<path d="M10,150 Q50,60 100,150 T190,150" fill="none" stroke="white" stroke-width="2"></path>
+</svg>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="relative">
+<div class="absolute -left-4 top-1/2 -translate-y-1/2 flex flex-col space-y-2 z-20">
+<span class="block w-1.5 h-6 bg-secondary rounded-full"></span>
+<span class="block w-1.5 h-6 bg-white/20 rounded-full"></span>
+<span class="block w-1.5 h-6 bg-white/20 rounded-full"></span>
+</div>
+<div class="rounded-[2.5rem] overflow-hidden border-4 border-white/10 relative h-[400px]">
+<img alt="Baker kneading dough" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrFN9h87ghGJI7ar1qVVH-MpU8pdNE7BakosGvVgaI3A6f0ZxheTrPoUtimChjENirOa2hCgwTC8PsUye1RA1Jr3kUVSFVEWKp6ESCgRS3mMhwnFouvHkippClHLWLaqMjU_4IaBat3LgAI63by_7nLJKC9Jn55Ole8XDi9mez-C2ybjZiNE48KT7W8h_V4NSu0dzH9Lh1QhkIX78-zzRsw-ghRZAczi61SBkVrz1k-I-SUlulhvoi5H460Q3bfNr-dz-JniP-LeU"/>
+<div class="absolute inset-0 flex items-center justify-center bg-black/20 hover:bg-black/10 transition-colors cursor-pointer">
+<div class="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center border border-white/50">
+<span class="material-symbols-outlined text-4xl text-white">play_arrow</span>
+</div>
+</div>
+</div>
+<div class="absolute -top-4 -right-4 text-secondary transform rotate-12">
+<span class="material-symbols-outlined text-5xl">rss_feed</span>
+</div>
+</div>
+<div class="space-y-6">
+<h2 class="text-4xl md:text-5xl font-display uppercase leading-tight">
+                        Why We Bake With Love?
+                    </h2>
+<p class="text-gray-300 text-lg leading-relaxed">
+                        At Beat Blend And Bake, every recipe has a history. From our grandmother's handwritten notes to modern techniques, we ensure every bite feels like home.
+                    </p>
+<div class="flex flex-wrap gap-4 mt-4">
+<div class="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full">
+<span class="material-symbols-outlined text-primary text-sm">verified</span>
+<span class="text-sm font-bold">Premium Ingredients</span>
+</div>
+<div class="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full">
+<span class="material-symbols-outlined text-primary text-sm">verified</span>
+<span class="text-sm font-bold">Eggless Options</span>
+</div>
+</div>
+<button class="mt-8 bg-primary text-chocolate font-display px-8 py-3 rounded-full shadow-lg hover:bg-yellow-300 transition-colors">
+                        OUR STORY
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-teal-100 dark:bg-teal-900 rounded-t-[4rem] px-6 pt-16 pb-8 mx-2 md:mx-4 mb-4">
+<div class="container mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 border-b border-teal-200 dark:border-teal-800 pb-12">
+<div class="space-y-6">
+<h2 class="text-4xl md:text-5xl font-display text-teal-900 dark:text-teal-50 uppercase leading-none">
+                        With Enough <br/> Butter, Anything <br/> Is Good!
+                    </h2>
+<div class="flex items-center space-x-4 bg-white/50 dark:bg-black/20 p-4 rounded-2xl max-w-sm backdrop-blur-sm">
+<img alt="Support agent" class="w-12 h-12 rounded-full border-2 border-teal-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0FXPwVhpw_59O5q0-c_BbCMRHGVY7dPCJVZpC7yHssyw-YXsaLzpYxR8PTOepVsV2k049CL6AplvySp7KUgT_RLnfawmHJ0o7vSN-2CwDcq9CS88ga7Z85lSBH4fBNF9UCyQuZTMxhqf08KplRIpcP0LqoPjtJojJjhpzdg8p5FrTv6_Z1KiQ9Aqv8OHuj6ezw1TPN6YqsatDw-8dn-y_gdgGKME9sRyVdGzl0GHmxESJyeD8IfMRWZ6QrcCRQXRN4ly_8Mtfd-U"/>
+<div>
+<p class="text-sm font-bold text-teal-900 dark:text-teal-100">Freshening up traditions daily.</p>
+<a class="text-xs underline text-teal-700 dark:text-teal-300 font-bold mt-1 block" href="#">Join the Bakers Circle?</a>
+</div>
+</div>
+</div>
+<div class="flex flex-col justify-end">
+<div class="mb-8">
+<div class="flex items-baseline space-x-2">
+<span class="text-5xl font-display text-teal-900 dark:text-white">4.9</span>
+<div class="flex text-white text-sm">
+<span class="material-symbols-outlined text-sm text-yellow-500 fill-current">star</span>
+<span class="material-symbols-outlined text-sm text-yellow-500 fill-current">star</span>
+<span class="material-symbols-outlined text-sm text-yellow-500 fill-current">star</span>
+<span class="material-symbols-outlined text-sm text-yellow-500 fill-current">star</span>
+<span class="material-symbols-outlined text-sm text-yellow-500 fill-current">star</span>
+</div>
+</div>
+<p class="text-teal-800 dark:text-teal-200 text-sm font-medium">Based on local Mumbai reviews.</p>
+</div>
+<div class="flex flex-wrap gap-3">
+<a class="border border-teal-800 dark:border-teal-200 text-teal-900 dark:text-teal-100 px-4 py-2 rounded-full text-xs font-bold uppercase hover:bg-teal-800 hover:text-white transition-colors cursor-pointer" href="#">Bespoke Cakes</a>
+<a class="border border-teal-800 dark:border-teal-200 text-teal-900 dark:text-teal-100 px-4 py-2 rounded-full text-xs font-bold uppercase hover:bg-teal-800 hover:text-white transition-colors cursor-pointer" href="#">Sacraments</a>
+<a class="border border-teal-800 dark:border-teal-200 text-teal-900 dark:text-teal-100 px-4 py-2 rounded-full text-xs font-bold uppercase hover:bg-teal-800 hover:text-white transition-colors cursor-pointer" href="#">Tea Cakes</a>
+<a class="border border-teal-800 dark:border-teal-200 text-teal-900 dark:text-teal-100 px-4 py-2 rounded-full text-xs font-bold uppercase hover:bg-teal-800 hover:text-white transition-colors cursor-pointer" href="#">Cookies</a>
+<a class="border border-teal-800 dark:border-teal-200 text-teal-900 dark:text-teal-100 px-4 py-2 rounded-full text-xs font-bold uppercase hover:bg-teal-800 hover:text-white transition-colors cursor-pointer" href="#">Gift Boxes</a>
+</div>
+</div>
+</div>
+<div class="pt-8 flex flex-col md:flex-row justify-between items-center bg-chocolate dark:bg-black p-6 rounded-3xl mt-8 text-white">
+<p class="text-xs text-gray-400 mb-4 md:mb-0">© 2024 Beat Blend And Bake.</p>
+<a class="text-2xl font-display tracking-tight text-white mb-4 md:mb-0" href="#">
+                    BEAT BLEND<span class="text-secondary">.</span>
+</a>
+<div class="flex items-center space-x-4">
+<span class="text-xs font-bold uppercase mr-2">Follow us-</span>
+<a class="w-8 h-8 border border-gray-600 flex items-center justify-center rounded hover:bg-white hover:text-chocolate transition-colors" href="#"><i class="not-italic font-bold text-xs">ig</i></a>
+<a class="w-8 h-8 border border-gray-600 flex items-center justify-center rounded hover:bg-white hover:text-chocolate transition-colors" href="#"><i class="not-italic font-bold text-xs">fb</i></a>
+<a class="w-8 h-8 border border-gray-600 flex items-center justify-center rounded hover:bg-white hover:text-chocolate transition-colors" href="#"><i class="not-italic font-bold text-xs">wa</i></a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        // Simple script to toggle dark mode for demonstration purposes if needed
+        // Just checking system preference initially
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add('dark');
+        }
+    </script>
+
+</body></html>
